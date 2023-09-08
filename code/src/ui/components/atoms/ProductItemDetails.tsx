@@ -1,5 +1,5 @@
-import { type ProductItemDetailsPropsType } from "@/app/types/ProductItemDetails.types";
-import { formatPrice } from "@/app/utils/formatPrice";
+import { type ProductItemDetailsPropsType } from "@/types/ProductItemDetails.types";
+import { formatPrice } from "@/utils/formatPrice";
 
 export const ProductItemDetails = ({
 	name,

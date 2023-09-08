@@ -1,4 +1,4 @@
-import { type ProductItemImagePropsType } from "@/app/types/ProductItemImage.types";
+import { type ProductItemImagePropsType } from "@/types/ProductItemImage.types";
 
 export const ProductItemImage = ({
 	src,

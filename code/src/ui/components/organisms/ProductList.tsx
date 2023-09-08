@@ -1,5 +1,5 @@
 import { ProductItem } from "../molecules/ProductItem";
-import { type ProductItemPropsType } from "@/app/types/ProductItem.types";
+import { type ProductItemPropsType } from "@/types/ProductItem.types";
 
 export const ProductList = ({
 	products,
