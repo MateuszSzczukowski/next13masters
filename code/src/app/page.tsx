@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { ProductList } from "./ui/components/organisms/ProductList";
-import { productList } from "@/app/json/productList";
+import { ProductList } from "../ui/components/organisms/ProductList";
+import { productList } from "@/json/productList";
 
 export default function Home() {
 	return (
