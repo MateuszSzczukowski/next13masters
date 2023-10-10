@@ -1,25 +1,24 @@
 "use client";
 import { ActiveLinkPropsType } from "@/types/ActiveLink.types";
 import Link from "next/link";
-import { useSelectedLayoutSegment } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export const ActiveLink = ({
-	slug,
+	children,
 	className = "",
 	activeClassName = "bg-gray-900 text-white",
-	text,
 	href,
 }: ActiveLinkPropsType) => {
-	const segment = useSelectedLayoutSegment();
-	const isActive = slug === segment;
+	const pathname = usePathname();
+	const isActive: boolean = pathname === href;
 
 	return (
-		<Link
+		<a
 			href={href}
 			className={`${className} ${isActive ? activeClassName : ""}`}
 			{...(isActive && { "aria-current": "page" })}
 		>
-			{text}
-		</Link>
+			{children}
+		</a>
 	);
 };
