@@ -1,7 +1,6 @@
 export type ActiveLinkPropsType = {
-	slug: string;
+	children: React.ReactNode;
 	className?: string;
 	activeClassName?: string;
-	text: string;
 	href: string;
 };
